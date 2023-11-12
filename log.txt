@@ -1,60 +1,9 @@
-URL: /
-Timestamp: Wed Nov 08 2023 00:36:06 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /
-Timestamp: Wed Nov 08 2023 00:38:25 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:38:25 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /
-Timestamp: Wed Nov 08 2023 00:39:25 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:39:25 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documentation.html
-Timestamp: Wed Nov 08 2023 00:39:27 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:39:27 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:39:32 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /dasda
-Timestamp: Wed Nov 08 2023 00:41:36 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:41:36 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documenatation
-Timestamp: Wed Nov 08 2023 00:41:48 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:41:48 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documentation.html
-Timestamp: Wed Nov 08 2023 00:41:52 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:41:52 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documentation.htm
-Timestamp: Wed Nov 08 2023 00:41:55 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:41:55 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documentation.htm
-Timestamp: Wed Nov 08 2023 00:41:57 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:41:57 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /documentatio
-Timestamp: Wed Nov 08 2023 00:42:02 GMT+0100 (czas środkowoeuropejski standardowy)
-
-URL: /favicon.ico
-Timestamp: Wed Nov 08 2023 00:42:02 GMT+0100 (czas środkowoeuropejski standardowy)
-
+::1 - - [12/Nov/2023:20:22:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:22:27 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:22:30 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:22:38 +0000] "GET /documentation.html HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 200 549 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:23:23 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:23:23 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
