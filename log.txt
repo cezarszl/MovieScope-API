@@ -1,9 +1,22 @@
-::1 - - [12/Nov/2023:20:22:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:22:27 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:22:30 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:22:38 +0000] "GET /documentation.html HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 200 549 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:23:21 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:23:23 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-::1 - - [12/Nov/2023:20:23:23 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:42:18 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:42:18 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:42:19 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2023:20:42:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+GET /
+GET /
+GET /
+GET /
+GET /
+GET /movies
+GET /documentation.html
+GET /documentation.html Sun, 12 Nov 2023 20:45:56 GMT
+GET /documentation.html Sun, 12 Nov 2023 20:45:56 GMT
+GET /movies Sun, 12 Nov 2023 20:45:58 GMT
+GET /movies Sun, 12 Nov 2023 20:45:58 GMT
+GET / Sun, 12 Nov 2023 20:45:59 GMT
+GET / Sun, 12 Nov 2023 20:46:00 GMT
+GET /movies Tue, 14 Nov 2023 14:23:24 GMT
+GET /movies Tue, 14 Nov 2023 14:24:01 GMT
+GET /movies Tue, 14 Nov 2023 14:24:01 GMT
+GET /movies Tue, 14 Nov 2023 14:24:01 GMT
+GET /movies Tue, 14 Nov 2023 14:24:01 GMT
