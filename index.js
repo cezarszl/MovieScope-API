@@ -15,7 +15,7 @@ const Users = Models.User;
 // mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
 
 // Atlas online DB
-mongoose.connect('mongodb+srv://myFlixDBadmin:Vg07xp2XHR4FnGW3@cluster0.o2ncran.mongodb.net/Cluster0?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://myFlixDBadmin:Vg07xp2XHR4FnGW3@cluster0.o2ncran.mongodb.net/Cluster0?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 // mongoose.connect(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
