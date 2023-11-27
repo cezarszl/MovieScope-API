@@ -15,7 +15,8 @@ const Users = Models.User;
 // mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
 
 // Atlas online DB
-mongoose.connect('mongodb+srv://myFlixDBadmin:Vg07xp2XHR4FnGW3@cluster0.o2ncran.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://myFlixDBadmin:Vg07xp2XHR4FnGW3@cluster0.o2ncran.mongodb.net/Cluster0?retryWrites=true&w=majority');
+// mongoose.connect(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -322,5 +323,5 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 8080;
 const host = '0.0.0.0';
 app.listen(port, host, () => {
-  console.log('Your app is listening on port ' + port + host + '.');
+  console.log('Your app is listening on port ' + port + '.');
 });
