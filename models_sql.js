@@ -1,5 +1,3 @@
-const { Sequelize, DataTypes } = require("sequelize");
-
 const userModel = function (sequelize, DataTypes) {
 
     return sequelize.define('user', {
