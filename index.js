@@ -29,10 +29,10 @@ const Movies = Models.Movie;
 const Users = Models.User;
 
 // Local DB
-mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
+// mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
 
 // Atlas online DB
-// mongoose.connect(process.env.CONNECTION_URI);
+mongoose.connect(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
