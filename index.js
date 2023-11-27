@@ -1,7 +1,4 @@
 const express = require('express'),
-  // morgan = require('morgan'),
-  // fs = require('fs'),
-  // path = require('path'),
   bodyParser = require('body-parser'),
   uuid = require('uuid'),
   cors = require('cors'),
@@ -41,9 +38,10 @@ require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
-// const accessLogStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), { flags: 'a' })
 
-// app.use(morgan(':method :url :date[web]', { stream: accessLogStream }))
+app.get('/', (req, res) => {
+  res.send('Welcome to myFLixAPI');
+});
 
 // Get all movies
 app.get('/movies', passport.authenticate('jwt', { session: false }), async (req, res) => {
