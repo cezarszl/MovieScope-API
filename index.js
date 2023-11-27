@@ -4,10 +4,27 @@ const express = require('express'),
   // path = require('path'),
   bodyParser = require('body-parser'),
   uuid = require('uuid'),
+  cors = require('cors'),
   mongoose = require('mongoose'),
   Models = require('./models');
 
+
+
 const app = express();
+
+let allowedOrigins = ['http://localhost:8080', 'https://cezarszlmyflix-0212aa467a8d.herokuapp.com/'];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      let message = 'The CORS policy for this application doesn’t allow access from origin ' + origin;
+      return callback(new Error(message), false);
+    }
+    return callback(null, true);
+  }
+}));
+
 const Movies = Models.Movie;
 const Users = Models.User;
 
@@ -15,7 +32,6 @@ const Users = Models.User;
 // mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
 
 // Atlas online DB
-// mongoose.connect('mongodb+srv://myFlixDBadmin:Vg07xp2XHR4FnGW3@cluster0.o2ncran.mongodb.net/Cluster0?retryWrites=true&w=majority');
 mongoose.connect(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
