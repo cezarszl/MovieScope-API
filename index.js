@@ -7,7 +7,7 @@ const express = require('express'),
   cors = require('cors'),
   mongoose = require('mongoose'),
   Models = require('./models');
-
+const { check, validationResult } = require('express-validator');
 
 
 const app = express();
@@ -29,10 +29,10 @@ const Movies = Models.Movie;
 const Users = Models.User;
 
 // Local DB
-// mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
+mongoose.connect('mongodb://127.0.0.1:27017/myFlixDB');
 
 // Atlas online DB
-mongoose.connect(process.env.CONNECTION_URI);
+// mongoose.connect(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -105,8 +105,21 @@ app.get('/movies/directors/:directorName', passport.authenticate('jwt', { sessio
     });
 });
 
+const UsersValidationMethods = [
+  check('Username', 'Username is required (minimum 10 characters)').isLength({ min: 10 }),
+  check('Username', 'Name contains non alphanumeric characters - not allowed.').isAlphanumeric(),
+  check('Password', 'Password is  required').not().isEmpty(),
+  check('Email', 'Email does not appear to be valid').isEmail()
+]
+
 // Post New User
-app.post('/users', async (req, res) => {
+app.post('/users', UsersValidationMethods, async (req, res) => {
+
+  let errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).json({ errors: errors.array() });
+  }
+
   let hashedPassword = Users.hashPassword(req.body.Password);
   await Users.findOne({ "Username": req.body.Username })
     .then((user) => {
@@ -133,9 +146,13 @@ app.post('/users', async (req, res) => {
 });
 
 // Update Users Name
-app.put('/users/:Username', passport.authenticate('jwt', { session: false }), async (req, res) => {
+app.put('/users/:Username', passport.authenticate('jwt', { session: false }), UsersValidationMethods, async (req, res) => {
   if (req.user.Username !== req.params.Username) {
     return res.status(400).send('Permission denied');
+  }
+  let errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).json({ errors: errors.array() });
   }
   await Users.findOneAndUpdate({ "Username": req.params.Username },
     {
