@@ -3,10 +3,10 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.2.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.6.3.1 (Linux)"/>
 	<meta name="author" content="cezarszl cezarszl"/>
 	<meta name="created" content="2023-11-14T07:18:00"/>
-	<meta name="changed" content="2023-11-22T17:56:24.967245901"/>
+	<meta name="changed" content="2023-11-30T04:57:31.334184703"/>
 	<meta name="AppVersion" content="15.0000"/>
 	<style type="text/css">
 		@page { size: 29.7cm 21cm; margin: 2.5cm }
@@ -20,45 +20,99 @@
 <center>
 	<table width="933" cellpadding="7" cellspacing="0">
 		<col width="124"/>
-		<col width="130"/>
-		<col width="49"/>
-		<col width="254"/>
-		<col width="304"/>
+		<col width="163"/>
+		<col width="65"/>
+		<col width="232"/>
+		<col width="277"/>
 		<tr>
 			<td width="124" height="23" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="pl-PL"><b>Request</b></span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="pl-PL"><b>URL</b></span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="pl-PL"><b>HTTP
 				Method</b></span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="pl-PL"><b>Request
 				body data format</b></span></font></p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="pl-PL"><b>Response
 				body data</b></span></font></p>
 			</td>
 		</tr>
 		<tr>
-			<td width="124" height="24" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="124" height="24" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+				<br/>
+
+				</p>
+				<p class="western" align="center" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+				Post a username and password as parameters to authenticate the
+				user's identity using basic HTTP authentication. Upon successful
+				authentication, it assigns a JSON Web Token (JWT) to the user.</p>
+				<p class="western"><br/>
+<br/>
+
+				</p>
+			</td>
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				/login</p>
+			</td>
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font face="Calibri, serif"><font size="2" style="font-size: 11pt">POST</font></font></p>
+			</td>
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font color="#000000"><font size="2" style="font-size: 11pt"><span lang="en-GB"><span style="background: #fffffe">None</span></span></font></font></p>
+			</td>
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+				<span lang="en-GB">A JSON object holding data about the user that
+				was </span><span lang="en-GB">logged</span><span lang="en-GB">,
+				including an ID </span><span lang="en-GB">and assigned token:</span></p>
+				<p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+				<span style="background: #fffffe">{</span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;user&quot;</font><font color="#000000">:
+				{</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;_id&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;65680333a51bd8565321f943&quot;</font><font color="#000000">,</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Username&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;newfriend1&quot;</font><font color="#000000">,</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Password&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;$2b$10$Hr1145/3XzIr.iYFaQYKGexbsLyublevd/ImS0u4ruNfas/8wMAzm&quot;</font><font color="#000000">,</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Email&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;newfriend@gmail.com&quot;</font><font color="#000000">,</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Birthday&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;1992-07-07T00:00:00.000Z&quot;</font><font color="#000000">,</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;FavouriteMovies&quot;</font><font color="#000000">:
+				[],</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;__v&quot;</font><font color="#000000">:
+				</font><font color="#098658">0</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe">},</span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;token&quot;</font><font color="#000000">:
+				</font><font color="#0451a5">&quot;</font><font color="#0451a5">YOUR_TOKEN”</font></span></p>
+				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe">}</span></p>
+				<p class="western" align="left" style="orphans: 2; widows: 2"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="124" height="24" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Get a
 				list of movies</span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">/movies</span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">GET</span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A JSON
 				object holding data about all the students.</span></font></p>
 			</td>
@@ -68,16 +122,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Get
 				data about a single movie by title</span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">/movies/[Title]</span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">GET</span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A JSON
 				object holding data about a single movie, containing a title,
 				description, genre and director.</span></font></p>
@@ -88,16 +142,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Get
 				data about a genre by name</span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">/movies/genres/[Genre]</span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">GET</span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<span lang="en-GB">A JSON object holding data about a single
 				genre, containing a name and description.</span></p>
 			</td>
@@ -107,16 +161,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Get
 				data about a director by name</span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">/movies/directors/[Name]</span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">GET</span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<span lang="en-GB">A JSON object holding data about a single
 				director, containing a name, bio and year of birth.</span></p>
 			</td>
@@ -126,98 +180,99 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Add an
 				user</span></font></p>
 			</td>
-			<td width="130" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="163" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users</span></font></p>
 			</td>
-			<td width="49" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">POST</span></font></p>
 			</td>
-			<td width="254" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
-				<font size="2" style="font-size: 11pt"><span lang="en-GB"><font color="#000000"><span style="background: #fffffe">A</span></font>
+			<td width="232" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+				<font color="#000000"><font size="2" style="font-size: 11pt"><span lang="en-GB"><span style="background: #fffffe">A</span></span></font></font><font size="2" style="font-size: 11pt"><span lang="en-GB">
 				JSON object holding data about the user to add, structured like:</span></font></p>
 				<p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
-				<span style="background: #fffffe"><font face="Calibri, serif"><font size="2" style="font-size: 11pt"><span lang="en-GB">{</span></font></font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Username&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina2000&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Password&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;street123&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Email&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina1997@gmail.com&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Birthday&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;1992-07-07&quot;</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe">}</span></p>
-				<p class="western" align="left" style="orphans: 2; widows: 2"><br/>
+				<font color="#000000"><font size="2" style="font-size: 11pt"><span lang="en-GB"><span style="background: #fffffe">{</span></span></font></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Username&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina2000&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Password&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;street123&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Email&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina1997@gmail.com&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Birthday&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;1992-07-07&quot;</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#000000"><span style="background: #fffffe">}</span></font></p>
+				<p lang="en-GB" class="western" align="left" style="orphans: 2; widows: 2">
+				<br/>
 
 				</p>
 			</td>
-			<td width="304" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+			<td width="277" style="border: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A JSON
 				object holding data about the user that was added, including an
 				ID:</span></font></p>
 				<p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
-				<span style="background: #fffffe">{</span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Username&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina2000&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Password&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;street123&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Email&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina1997@gmail.com&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Birthday&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;1992-07-07T00:00:00.000Z&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;FavouriteMovies&quot;</font><font color="#000000">:
-				[],</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;_id&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;655e3221b4280b8bf525ba6d&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;__v&quot;</font><font color="#000000">:
-				</font><font color="#098658">0</font></span></p>
+				<font color="#000000"><span style="background: #fffffe">{</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Username&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina2000&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Password&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;street123&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Email&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina1997@gmail.com&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Birthday&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;1992-07-07T00:00:00.000Z&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;FavouriteMovies&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				[],</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;_id&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;655e3221b4280b8bf525ba6d&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;__v&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#098658"><span style="background: #fffffe">0</span></font></p>
 				<p class="western"><font color="#000000"><span style="background: #fffffe">}</span></font></p>
 			</td>
 		</tr>
 		<tr>
 			<td width="124" height="24" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Update
-				an user’s </span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">info</span></font></p>
+				an user’s info</span></font></p>
 			</td>
-			<td width="130" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
-				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">Username</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">]</span></font></p>
+			<td width="163" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[Username]</span></font></p>
 			</td>
-			<td width="49" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">PUT</span></font></p>
 			</td>
-			<td width="254" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+			<td width="232" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A JSON
 				object holding new user name, structured like:</span></font></p>
 				<p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
-				<span style="background: #fffffe">{</span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Username&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina2000&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Password&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;street1234&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Email&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina1234@gmail.com&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Birthday&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;1992-07-07&quot;</font></span></p>
+				<font color="#000000"><span style="background: #fffffe">{</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Username&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina2000&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Password&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;street1234&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Email&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina1234@gmail.com&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Birthday&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;1992-07-07&quot;</span></font></p>
 				<p class="western"><font color="#000000"><span style="background: #fffffe">}</span></font></p>
 			</td>
-			<td width="304" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
+			<td width="277" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A JSON
 				object holding data about the user that was updated,. Example:</span></font></p>
 				<p class="western" align="left" style="orphans: 2; widows: 2; margin-bottom: 0cm">
-				<span style="background: #fffffe">{</span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;_id&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;655e3221b4280b8bf525ba6d&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Username&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina2000&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Password&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;street1234&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Email&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;karolina1234@gmail.com&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;Birthday&quot;</font><font color="#000000">:
-				</font><font color="#0451a5">&quot;1992-07-07T00:00:00.000Z&quot;</font><font color="#000000">,</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;FavouriteMovies&quot;</font><font color="#000000">:
-				[],</font></span></p>
-				<p class="western" style="margin-bottom: 0cm"><span style="background: #fffffe"><font color="#a31515">&quot;__v&quot;</font><font color="#000000">:
-				</font><font color="#098658">0</font></span></p>
+				<font color="#000000"><span style="background: #fffffe">{</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;_id&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;655e3221b4280b8bf525ba6d&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Username&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina2000&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Password&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;street1234&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Email&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;karolina1234@gmail.com&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;Birthday&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#0451a5"><span style="background: #fffffe">&quot;1992-07-07T00:00:00.000Z&quot;</span></font><font color="#000000"><span style="background: #fffffe">,</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;FavouriteMovies&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				[],</span></font></p>
+				<p class="western" style="margin-bottom: 0cm"><font color="#a31515"><span style="background: #fffffe">&quot;__v&quot;</span></font><font color="#000000"><span style="background: #fffffe">:
+				</span></font><font color="#098658"><span style="background: #fffffe">0</span></font></p>
 				<p class="western"><font color="#000000"><span style="background: #fffffe">}</span></font></p>
 			</td>
 		</tr>
@@ -226,16 +281,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Add a
 				movie to user’s favourites</span></font></p>
 			</td>
-			<td width="130" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
-				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">Username</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">]/</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">movies/</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">[</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">MovieID</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">]</span></font></p>
+			<td width="163" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[Username]/movies/[MovieID]</span></font></p>
 			</td>
-			<td width="49" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">POST</span></font></p>
 			</td>
-			<td width="254" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A text
 				message indicating whether the movie was successfully added.</span></font></p>
 			</td>
@@ -245,16 +300,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Delete
 				a movie from user’s favourites</span></font></p>
 			</td>
-			<td width="130" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
-				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">Username</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">]/</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">movies/</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">[</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">MovieID</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">]</span></font></p>
+			<td width="163" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[Username]/movies/[MovieID]</span></font></p>
 			</td>
-			<td width="49" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">DELETE</span></font></p>
 			</td>
-			<td width="254" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A text
 				message indicating whether the movie was successfully deleted.</span></font></p>
 			</td>
@@ -264,16 +319,16 @@
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">Delete
 				an user</span></font></p>
 			</td>
-			<td width="130" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
-				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/</span></font><font size="2" style="font-size: 11pt"><span lang="en-GB">[Username]</span></font></p>
+			<td width="163" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+				<font size="2" style="font-size: 11pt"><span lang="en-GB">/users/[Username]</span></font></p>
 			</td>
-			<td width="49" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="65" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">DELETE</span></font></p>
 			</td>
-			<td width="254" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
+			<td width="232" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="center" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">None</span></font></p>
 			</td>
-			<td width="304" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
+			<td width="277" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.19cm"><p class="western" align="left" style="orphans: 2; widows: 2">
 				<font size="2" style="font-size: 11pt"><span lang="en-GB">A text
 				message indicating whether the user was successfully removed</span></font></p>
 			</td>
