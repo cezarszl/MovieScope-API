@@ -3,7 +3,7 @@ const express = require('express'),
   cors = require('cors');
 
 const app = express();
-
+require('dotenv').config();
 let allowedOrigins = ['http://localhost:8080', 'https://cezarszlmyflix-0212aa467a8d.herokuapp.com/'];
 
 app.use(cors({
@@ -19,11 +19,7 @@ app.use(cors({
 
 const mongooseConnectDB = require("./configs/mongoose.db");
 
-// Local DB
-// mongooseConnectDB('mongodb://127.0.0.1:27017/myFlixDB');
-
-// Atlas online DB
-mongooseConnectDB('process.env.CONNECTION_URI');
+mongooseConnectDB(process.env.CONNECTION_URI);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -151,29 +151,21 @@ router.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { s
     if (req.user.Username !== req.params.Username) {
         return res.status(400).send('Permission denied');
     }
-    await Users.findOneAndUpdate({ "Username": req.params.Username },
+    const movie = await Movies.findById(req.params.MovieID);
+    if (!movie) {
+        return res.status(400).send('The movie doesnt exist');
+    }
+    const updatedUser = await Users.findOneAndUpdate({ "Username": req.params.Username },
         {
-            $push: { FavouriteMovies: req.params.MovieID }
-        }, { new: true })
-        .then((updatedUser) => {
-            if (updatedUser) {
-                Movies.findById(req.params.MovieID)
-                    .then((movie) => {
-                        res.status(200).send(movie.Title + " has been added to " + updatedUser.Username + "\'s favourites films.");
-                    })
-                    .catch((err) => {
-                        console.error(err);
-                        res.status(500).send('There is no such a movie (wrong ID)');
-                    });
-            } else {
-                res.status(400).send('There is no such an user');
-            }
-        })
-        .catch((err) => {
-            console.error(err);
-            res.status(500).send('Error: ' + err);
-        })
+            $addToSet: { FavouriteMovies: req.params.MovieID }
+        }, { new: true });
+
+    if (!updatedUser) {
+        return res.status(400).send('There is no such an user');
+    }
+    res.json(updatedUser);
 });
+
 
 // Delete a movie from the list of favourites
 router.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), async (req, res) => {
