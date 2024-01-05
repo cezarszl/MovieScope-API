@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 });
 
 // Get all movies
-router.get('/movies', { session: false }), async (req, res) => {
+router.get('/movies', async (req, res) => {
     await Movies.find()
         .then((movies) => {
             res.status(201).json(movies);
