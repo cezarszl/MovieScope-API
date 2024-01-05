@@ -180,7 +180,7 @@ router.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', {
             if (updatedUser) {
                 Movies.findById(req.params.MovieID)
                     .then((movie) => {
-                        res.status(200).send(movie.Title + " has been removed from " + updatedUser.Username + "\'s favourites films.");
+                        res.json(updatedUser);
                     })
                     .catch((err) => {
                         console.error(err);
