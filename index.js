@@ -10,12 +10,13 @@ app.use(cors({
     if (!origin) return callback(null, true);
     if (allowedOrigins.indexOf(origin) === -1) {
 
-      let message = 'The CORS policy for this application doesnt allow access from origin ' + origin;
+      let message = "The CORS policy for this application doesnt allow access from origin" + origin;
       return callback(new Error(message), false);
     }
     return callback(null, true);
 
-  }));
+  }
+}));
 
 const mongooseConnectDB = require("./configs/mongoose.db");
 
