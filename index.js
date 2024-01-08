@@ -4,7 +4,8 @@ const express = require('express'),
 
 const app = express();
 require('dotenv').config();
-let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://cezarszlmyflix-0212aa467a8d.herokuapp.com/', 'https://cezarszl.netlify.app/'];
+let allowedOrigins = ['http://localhost:8080',
+  'http://localhost:1234', 'https://cezarszlmyflix-0212aa467a8d.herokuapp.com/', 'https://cezarszl.netlify.app/'];
 
 app.use(cors({
   origin: (origin, callback) => {
