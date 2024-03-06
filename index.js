@@ -4,7 +4,7 @@ const express = require('express'),
 
 const app = express();
 require('dotenv').config();
-let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://cezarszl.netlify.app/'];
+let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234', 'https://cezarszl.netlify.app/', 'https://cezarszl.github.io/myFlix-Angular-client/'];
 app.use(cors());
 
 const mongooseConnectDB = require("./configs/mongoose.db");
