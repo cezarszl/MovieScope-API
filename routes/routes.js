@@ -75,7 +75,6 @@ router.get('/movies/directors/:directorName', passport.authenticate('jwt', { ses
 });
 
 const UsersValidationMethods = [
-    check('Username', 'Username is required (minimum 10 characters)').isLength({ min: 10 }),
     check('Username', 'Name contains non alphanumeric characters - not allowed.').isAlphanumeric(),
     check('Password', 'Password is  required').not().isEmpty(),
     check('Email', 'Email does not routerear to be valid').isEmail()
@@ -93,7 +92,7 @@ router.post('/users', UsersValidationMethods, async (req, res) => {
     await Users.findOne({ "Username": req.body.Username })
         .then((user) => {
             if (user) {
-                res.status(400).send(req.body.Username + ' already exist!')
+                res.status(400).json(user);
             } else {
                 Users.create({
                     Username: req.body.Username,
