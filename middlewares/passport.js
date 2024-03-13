@@ -6,9 +6,6 @@ const ExtractJWT = require('passport-jwt').ExtractJwt;
 
 let Users = ModelUser.User;
 
-/**
- * Passport strategy for authenticating users using local username and password.
- */
 passport.use(
     new LocalStrategy(
         {
@@ -43,18 +40,12 @@ passport.use(
         })
 );
 
-/**
- * Options for JWT authentication strategy.
- * @type {object}
- */
+
 const JWTOptions = {
     jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
     secretOrKey: 'secret'
 }
 
-/**
- * Passport strategy for authenticating users using JWT.
- */
 passport.use(new JWTStrategy(JWTOptions, async (jwt_payload, done) => {
     await Users.findById(jwt_payload._id)
         .then((user) => {

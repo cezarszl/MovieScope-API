@@ -1,8 +1,0 @@
-{
-  "source": {
-    "include": ["configs", "middlewares", "models"]
-  },
-  "opts": {
-    "destination": "docs"
-  }
-}
