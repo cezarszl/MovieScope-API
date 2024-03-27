@@ -1,4 +1,4 @@
-# myFlixAPI
+# MovieScope API
 
 ## Project description
 
