@@ -28,4 +28,4 @@ MovieScope API is a Node.js application that provides backend services for the M
 Full API documentation is available [here](https://cezarszlmyflix-0212aa467a8d.herokuapp.com/documentation.html).
 
 ## Live Demo
-Check out the live demo [here](https://cezarszlmyflix-0212aa467a8d.herokuapp.com/).
+Check out the live demo [here](https://myflixapiv2-7f0c618b6d21.herokuapp.com/).
